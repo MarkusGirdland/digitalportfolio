@@ -35,6 +35,36 @@
                 eros ornare non. Duis eleifend nec libero ultrices eleifend. Quisque vehicula 
                 lacinia orci, eget pretium mauris imperdiet vitae. Fusce facilisis ornare 
                 sapien at fermentum. Ut nec dui feugiat, imperdiet orci id, posuere quam.</p>
+                
+                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST" id="userform">
+                    <fieldset class = "formBox">
+                        <legend class="legendHeader">OBS! Detta formulär fungerar inte</legend>
+                            <label class="formQuestion" for="typeOfErrand" >Ärendetyp:</label>
+                                <select name="Type" id="typeOfErrand">
+                                    <option value="Fråga" selected>Fråga</option>
+                                    <option value="Förslag">Förslag</option>
+                                    <option value="Rapportera fel">Rapportera fel</option>
+                                </select>
+                                <br />
+                                <br />
+                            <label class="formQuestion">Kön:</label>
+                                <input type="radio" name="Sex" value="M" /> Man
+                                <input type="radio" name="Sex" value="F" /> Kvinna
+                    </fieldset>
+                
+                    <fieldset class="formBox">
+                        <legend class="legendHeader">Det är endast ett exempel</legend>
+                            <p class="formQuestion">Vad är ditt namn?</p> 
+                            <input type="text" name="Name" />
+                            <p class="formQuestion">Vad vill du meddela mig?</p>
+                            <textarea name="message" rows="5" cols="30" form="userform">Skriv ditt meddelande. . .</textarea>
+                    </fieldset> 
+                    
+                    
+                    
+                    <input id="sendButton" type="submit" value="Skicka!" />
+                    
+                </form>
             </main>
 
         </div>
