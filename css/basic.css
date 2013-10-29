@@ -41,6 +41,7 @@ padding: 0;
 
 body {
     font-family: Helvetica, sans-serif;
+    background-image: url('../pics/backgroundWood.jpg');
 }
 
 
@@ -48,9 +49,9 @@ body {
 #book {
 background: url("../jquery/book.png") no-repeat;
 position: absolute;
-width: 830px;
-height: 260px;
-left: 50%;
+width: 1300px;
+height: 469px;
+left: 30%;
 top: 50%;
 margin-left: -400px;
 margin-top: -125px;
@@ -61,10 +62,10 @@ margin-top: -125px;
 #pages section {
 background: url("../jquery/paper.png") no-repeat;
 display: block;
-width: 400px;
-height: 250px;
+width: 2500px;
+height: 800px;
 position: absolute;
-left: 415px;
+left: 753px;
 top: 5px;
 overflow: hidden;
 }
@@ -75,7 +76,7 @@ display: block;
 		
 width: 400px;
 		
-height: 250px;
+height: 338px;
 		
 font-size: 12px;
 
