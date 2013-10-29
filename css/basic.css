@@ -5,6 +5,10 @@
        
     }
     
+    .menyn {
+        padding-top: 10px;
+    }
+    
     #meny {
         float: right;
         margin-top: none;
@@ -22,8 +26,8 @@
 
 
  nav img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     float: left;
     display: block;
     background: transparent;
@@ -62,7 +66,7 @@ position: absolute;
 width: 1499px;
 height: 469px;
 left: 30%;
-top: 50%;
+top: 35%;
 margin-left: -400px;
 margin-top: -125px;
 }
