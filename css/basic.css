@@ -5,9 +5,13 @@
        
     }
     
+    #meny {
+        float: right;
+        margin-top: none;
+    }
 }
 
-#container {
+    #container {
     overflow: auto;
     margin: 0 auto;
 }
@@ -16,7 +20,8 @@
     list-style: none;
 }
 
-nav img{
+
+ nav img{
     width: 150px;
     height: 150px;
     float: left;
@@ -25,7 +30,12 @@ nav img{
 }
 
 
-
+#boken {
+    width: 750px;
+	height: 469px;
+	margin-top: 200px;
+	margin-left: 100px;
+}
 
 
 
@@ -49,7 +59,7 @@ body {
 #book {
 background: url("../jquery/book.png") no-repeat;
 position: absolute;
-width: 1300px;
+width: 1499px;
 height: 469px;
 left: 30%;
 top: 50%;
@@ -62,8 +72,8 @@ margin-top: -125px;
 #pages section {
 background: url("../jquery/paper.png") no-repeat;
 display: block;
-width: 2500px;
-height: 800px;
+width: 750px;
+height: 469px;
 position: absolute;
 left: 753px;
 top: 5px;
@@ -74,9 +84,9 @@ overflow: hidden;
 		
 display: block;
 		
-width: 400px;
+width: 700px;
 		
-height: 338px;
+height: 500px;
 		
 font-size: 12px;
 
