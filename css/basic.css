@@ -1,64 +1,30 @@
 /* Större skärmar */
 
 @media only screen and (min-width:481px){
-    body {
-       
-    }
-    
-    .menyn {
-        padding-top: 10px;
-    }
-    
-    #meny {
-        float: right;
-        margin-top: none;
-    }
+body {
+   
 }
 
-    #container {
-    overflow: auto;
-    margin: 0 auto;
+.menyn {
+    padding-top: 10px;
 }
 
 #meny {
-    list-style: none;
+    float: right;
+    margin-top: none;
 }
-
-
- nav img{
-    width: 130px;
-    height: 130px;
-    float: left;
-    display: block;
-    background: transparent;
-}
-
 
 #boken {
-    width: 750px;
-	height: 469px;
-	margin-top: 200px;
-	margin-left: 100px;
+width: 750px;
+height: 469px;
+margin-top: 200px;
+margin-left: 100px;
 }
-
-
 
 body, h2, p {
-	
 margin: 0;
-	
 padding: 0;
-
 }
-
-
-
-body {
-    font-family: Helvetica, sans-serif;
-    background-image: url('../pics/backgroundWood.jpg');
-}
-
-
 
 #book {
 background: url("../jquery/book.png") no-repeat;
@@ -85,43 +51,56 @@ overflow: hidden;
 }
 
 #pages section>div {
-		
 display: block;
-		
 width: 700px;
-		
 height: 500px;
-		
 font-size: 12px;
-
 }
 
 
 #pages section p,
 #pages section h2 {
-		
 padding: 3px 35px;
-		
 line-height: 1.4em;
-		
 text-align: justify;
-	
 }
 
 
 #pages section h2{
-		
 margin: 15px 0 10px;
-	
 }
 
 
 
 #pageflip-canvas {
-	
 position: absolute;
-	
 z-index: 100;
-
 }
+}
+
+        /* Mobil */
+
+#container {
+overflow: auto;
+margin: 0 auto;
+}
+
+#meny {
+    list-style: none;
+}
+
+
+ nav img{
+    width: 130px;
+    height: 130px;
+    float: left;
+    display: block;
+    background: transparent;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-image: url('../pics/backgroundWood.jpg');
+}
+
 
