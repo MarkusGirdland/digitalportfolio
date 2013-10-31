@@ -5,11 +5,14 @@ overflow: auto;
 margin: 0 auto;
 }
 
+
+
 #meny {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 
 
  nav img{
@@ -47,7 +50,17 @@ body {
     #kontaktBak {
     display: none;
     }
+/* Font */
 
+@font-face {
+    font-family: SourceSans;
+    src: url(../fonts/SourceSansPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: SourceSansLight;
+    src: url(../fonts/SourceSansPro-Light.otf);
+}
 
 /* Större skärmar */
 
@@ -66,6 +79,26 @@ body {
     }
     
             /* Boken */
+            
+    .bildIBoken {
+        margin-left: 50px;
+        width: 214px;
+        height: 150px;
+        margin-top: 10px;
+        float: left;
+    }
+    
+    #book a:hover {
+    	-webkit-transform: scale(1.5); /* Skala upp den */
+    	-moz-transform: scale(1.5);
+        transform: scale(1.5);
+    	z-index:10;                     /* Lägg den över dom andra i Z-index */
+    }
+    
+    #stress {
+        float: right;
+        width: 214px;
+    }
     
     body, h2, p {
     margin: 0;
@@ -88,17 +121,17 @@ body {
     #pages section {
     background: url("../jquery/paper.png") no-repeat;
     display: block;
-    width: 750px;
-    height: 469px;
+    width: 450px;
+    height: 308px;
     position: absolute;
-    left: 753px;
+    left: 515px;
     top: 5px;
     overflow: hidden;
     }
     
     #pages section>div {
     display: block;
-    width: 700px;
+    width: 480px;
     height: 500px;
     font-size: 12px;
     }
@@ -178,6 +211,45 @@ body {
     }
 }
 
+
+        /* Presentation */
+        
+    #sophieBildPresentation {
+        height: 400px;
+        width: 400px;
+        float: left;
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+    
+    #presentationDiv {
+        display: block;
+        background: url(../pics/paperabout.png);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 900px;
+        background-position: center;
+        float: left;
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+    
+    #presentationDiv p {
+        width: 450px;
+        float: right;
+        margin-right: 130px;
+        margin-top: 100px;
+        font-family: "SourceSansLight";
+    }
+    
+    #presentationDiv h1 {
+        font-family: "SourceSans";
+        width: 400px;
+        float: right;
+        margin-top: 100px;
+    }
+
+
         /* Mindre skärmar */
         
 @media only screen and (max-width:1320px){
@@ -203,6 +275,22 @@ body {
     height: 469px;
     float: left;
     margin-top: 200px;
+    }
+    
+    #presentationDiv {
+        background: none;
+        width: 0px
+        height: 0px;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    
+    #presentationDiv h1 {
+        color: white;
+    }
+
+    #presentationText {
+        color: white;
     }
 }
 
