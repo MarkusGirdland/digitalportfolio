@@ -5,6 +5,10 @@ overflow: auto;
 margin: 0 auto;
 }
 
+a:link { color: rgba(159, 172, 127, 1); }
+a:visited { color: rgba(159, 172, 127, 1); }
+
+
 #contactPage {
     margin-top: 0px;
     margin-left: 0px;
@@ -16,7 +20,13 @@ margin: 0 auto;
     margin: 0;
 }
 
-
+#tooSmallScreenPrompt{
+    font-family: "SourceSansLight";
+    font-size: 20px;
+    text-align: center;
+    color: rgba(214, 217, 199, 1);
+    margin-top: 200px;
+}
 
  nav img{
     width: 130px;
@@ -30,6 +40,15 @@ body {
     font-family: Helvetica, sans-serif;
     background-image: url('../pics/backgroundWood.jpg');
 }
+
+    #book {
+        display: none;
+    }
+    
+    #book img {
+        display: none;
+    }
+
     #boken {
         display: none;
     }
@@ -73,8 +92,9 @@ body {
 /* Större skärmar */
 
 @media only screen and (min-width:780px){
-    body {
-       
+
+    #tooSmallScreenPrompt {
+        display: none;
     }
     
     .menyn {
@@ -89,17 +109,20 @@ body {
     
             /* Boken */
             
-    .bildIBoken {
-        margin-left: 50px;
+    #book img {
+        display: block;
+        margin-left: 40px;
         width: 214px;
         height: 150px;
         margin-top: 10px;
         float: left;
     }
     
-    #stress {
+    #book img:nth-child(2) {
+        margin-top: 0px;
         float: right;
         width: 214px;
+        margin-left: 20px;
     }
     
     body, h2, p {
@@ -108,13 +131,14 @@ body {
     }
     
     #book {
+    display: block;
     background: url("../jquery/bakbook.png");
     background: url("../jquery/book.png") no-repeat;
     position: absolute;
     width: 1499px;
     height: 469px;
     left: 30%;
-    top: 35%;
+    top: 45%;
     margin-left: -400px;
     margin-top: -125px;
     }
@@ -163,7 +187,7 @@ body {
 
     #boken {
     display: block;
-    width: 900px;
+    width: 761px;
     height: 469px;
     float: left;
     margin-top: 100px;
@@ -182,15 +206,15 @@ body {
     #bloggbok {
         display: block;
         float: right;
-        width: 400px;
+        width: 341px;
         height: 469px;
         margin-top: 120px;
-        margin-right: 150px;
+        margin-right: 250px;
     }
     
     #kaffeMugg {
         display: block;
-        width: 250px;
+        width: 281px;
         height: 250px;
         float: right;
         margin-top: 100px;
@@ -237,7 +261,7 @@ body {
     }
     
     #contactPage p {
-        font-family: "SourceSansBold";
+        font-family: "SourceSansLight";
         float: left;
         margin-top: 100px;
         margin-left: 160px;
@@ -314,6 +338,10 @@ body {
     height: 469px;
     float: left;
     }
+    
+    #tooSmallScreenPrompt {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1120px){
@@ -325,6 +353,10 @@ body {
         width: 100%;
     }
     
+    #tooSmallScreenPrompt {
+        display: block;
+    }
+    
     #boken {
     width: 700px;
     height: 469px;
@@ -334,7 +366,7 @@ body {
     
     #presentationDiv {
         background: none;
-        width: 0px
+        width: 0px;
         height: 0px;
         margin-left: 0;
         margin-top: 0px;
