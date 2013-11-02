@@ -310,8 +310,8 @@ body {
     }
     
     .blogPost img {
-        height: 100px;
-        width: 220px;
+        height: 70px;
+        width: 190px;
         float: right;
         margin-top: 30px;
     }
@@ -334,7 +334,7 @@ body {
     .blogMenu {
         display: block;
         position: relative;
-        left: 211px;
+        left: 183px;
         top: -400px;
         float: right;
     }
