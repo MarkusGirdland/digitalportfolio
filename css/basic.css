@@ -262,7 +262,7 @@ body {
         margin-left: 100px;
     }
     
-    #contactPage p {
+    #hcard-Sophie-Ottosson {
         font-family: "SourceSansLight";
         float: left;
         margin-top: 100px;
@@ -270,7 +270,7 @@ body {
         font-size: 25px;
     }
     
-    #contactPage p:nth-child(3)
+    #hcard-Sophie-Ottosson
     {
         font-size: 20px;
         margin-left: 100px;
